@@ -20,10 +20,21 @@ public class Vehiculo {
         System.out.println(nombre);
     }
     
+    static void marcaVehiculo(String marca){
+        System.out.println(marca);
+    }
+    
+    static void caracteristicasVehiculo(String marcaVehiculo, int cantidadPasajeros,int modelo){
+        System.out.println(marcaVehiculo + " " + cantidadPasajeros + " " + modelo);
+    }
+    
+    
     //psvm + TAB
     public static void main(String[] args) {
         Vehiculo instClass = new Vehiculo();
         instClass.imprimirMensaje("Hola grupo ADSI desde JAVA");
         instClass.nombreAprendiz("Yaneth Mejía");
+        instClass.marcaVehiculo("Mazda");
+        instClass.caracteristicasVehiculo("Chevrolet", 5, 2021);
     }
 }
